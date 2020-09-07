@@ -1,5 +1,5 @@
 //
-//  Dice Project.swift
+//  Random Project.swift
 //
 //
 //  Created by Maddox on 9/1/20.
@@ -30,14 +30,13 @@ if start == "yes" {
             )
         }
         
-        let color = RGB_to_NSColor(red: red, green: green, blue: blue)
-        
-        print(color)
-        print(die)
-        //print(RGB_to_Hex(red: red, green: green, blue: blue))
+        let textColor: NSColor = RGB_to_NSColor(red: red, green: green, blue: blue)
+
+        print("You rolled a \(die) with NSColor \(textColor)")
         run += 1
     }
 }
 else {
     print("Goodbye!")
 }
+print("Goodbye!")
