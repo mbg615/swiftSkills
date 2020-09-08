@@ -9,6 +9,7 @@ import Foundation
 import AppKit
 
 var run:Int
+var skip = false
 
 print("Roll a Die?", terminator: " ")
 var start = readLine()
@@ -43,5 +44,10 @@ if start == "yes" {
 }
 else {
     print("Goodbye!")
+    skip = true
 }
-print("Goodbye!")
+while skip == false {
+    print("Goodbye!")
+    skip = true
+}
+    
