@@ -33,7 +33,12 @@ if start == "yes" {
         let textColor: NSColor = RGB_to_NSColor(red: red, green: green, blue: blue)
 
         print("You rolled a \(die) with NSColor \(textColor)")
-        run += 1
+        
+        print("Would you like to roll again?", terminator: " ")
+        let cont = readLine()
+        if cont == "no"{
+            run = 1
+        }
     }
 }
 else {
